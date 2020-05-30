@@ -13,7 +13,7 @@ test/
 css/
 img/
 wp-settings.php
-
+.well-known/
 
 #ignore log files and databases
 *.log
