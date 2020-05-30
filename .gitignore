@@ -10,8 +10,6 @@ wordfence-waf.php
 wp-content/plugins/wordfence/
 wp-content/plugins/wp-mail-smtp/
 test/
-css/
-img/
 wp-settings.php
 .well-known/
 
