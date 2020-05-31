@@ -1,0 +1,98 @@
+/*
+Theme Name: Catch Sketch
+Theme URI: https://catchthemes.com/themes/catch-sketch/
+Author: Catch Themes
+Author URI: https://catchthemes.com/
+Description: Catch Sketch is a clean and responsive multipurpose WordPress theme that is absolutely free of cost. The theme is versatile and comes with flexible features to adapt all kinds of business styles. Catch Sketch is completely responsive with an aesthetic and minimal design. It has been designed in a way that is perfect for promoting products and services. Be it a personal website, a corporate site or a photography blog, Catch Sketch is the best theme to go for. Your website will look aesthetically pleasing and professionally sleek. It comes with features like Featured Content, Featured Slider, Hero Content, Portfolio, Services, Social Icons, Testimonials, Incredible Support, WordPress Standard Codes, and more. With all of these basic features integrated into Catch Sketch, you sure can create a simple and elegant website with utter ease and speed. Catch Sketch is an innovative, simple yet feature-rich multipurpose theme that provides a flexible framework for any type of websites with a clean outlook. Express your thoughts and push your business to the next level with Catch Sketch. For more information, check out Theme Instructions at https://catchthemes.com/themes/catch-sketch/#theme-instructions, support at https://catchthemes.com/support/ and Demo at https://catchthemes.com/demo/catch-sketch/
+Version: 1.2
+Requires at least: 5.1
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: catch-sketch
+Domain Path: /languages/
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, wide-blocks, block-styles, blog, photography, portfolio
+
+Catch Sketch is based on Underscores http://underscores.me/, (C) 2012-2019 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+	## Color
+	## Fonts
+	## Structure
+	## Transition
+# Normalize
+# Typography
+	## Headings
+	## Copy
+# Elements
+	## Color Selection
+	## Lists
+	## Tables
+# Forms
+	## Buttons
+	## Fields
+# Navigation
+	## Next Previous
+	## Social Menu Navigation
+	## Menus
+# Mixin
+	## Mixin
+# Modules
+	## Alignments
+	## Blocks
+	## Clearings
+# Sites
+	#Primary
+		## Archives
+		## Comments
+	# Secondary
+		## Widget
+--------------------------------------------------------------*/
+
+//**Variables**//
+
+@import 'sass/variables/variables';
+
+//**Normalize**//
+
+@import 'sass/normalize';
+
+//**mixin**//
+
+@import 'sass/mixin/mixin';
+
+//**mixin**//
+
+@import 'sass/modules/modules';
+
+
+//**Forms**//
+
+@import 'sass/forms/forms';
+
+//**Navigation**//
+
+@import 'sass/navigation/navigation';
+
+//**Typography**//
+
+@import 'sass/typography/typography';
+
+//**media**//
+
+@import 'sass/media/media';
+
+//**site**//
+
+@import 'sass/site/site';
+
+//**Elements**//
+
+@import 'sass/elements/element';
+

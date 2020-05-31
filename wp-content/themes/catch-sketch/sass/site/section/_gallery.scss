@@ -1,0 +1,31 @@
+.gallery-section .gallery-content-wrapper {
+
+    .entry-content {
+        margin-top: 0;
+    }
+
+    .entry-footer { 
+        margin-top: 0;
+    }
+}
+
+.gallery-row {
+    margin-bottom: 0;
+}
+
+.gallery-section .hentry-inner .gallery-group {
+
+    .tiled-gallery-item {
+
+        img {
+            display: block;
+            filter: saturate(0.1);
+            -webkit-filter: saturate(0.1);
+        }
+
+        &:hover img {
+            filter:saturate(1);
+            -webkit-filter: saturate(1);
+        }
+    }
+}

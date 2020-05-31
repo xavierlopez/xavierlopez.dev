@@ -1,0 +1,143 @@
+.team-section {
+
+    .hentry {
+        position: relative;
+        width: 100%;
+
+        .more-link {
+            border: 1px solid;
+        }
+
+        .hentry-inner {
+            padding: 35px;
+            position: relative;
+            z-index: 99;
+
+            &:before {
+                bottom: 0;
+                content: '';
+                height: 3px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                z-index: -1;
+            }
+    
+            &:hover {
+    
+                &:before {
+                    height: 100%;
+                }
+            }
+
+            @include media(desktop) {
+                padding: 18px;
+            }
+    
+            @include media(wide) {
+                padding: 42px 15px;
+            }
+    
+            @include media(large) {
+                padding: 42px;
+            }
+
+            .menu-social-container {
+                margin-top: 20px;
+            }
+
+            .post-thumbnail {
+                @include border(50%);
+                background-size: cover;
+                background-position: center center;
+                height: 236px;
+                margin: 0 auto;
+                margin-bottom: 21px;
+                width: 236px;
+
+                @include media(desktop) {
+                    height: 150px;
+                    margin-bottom: 28px;
+                    width: 150px;
+                }
+
+                @include media(wide) {
+                    height: 236px;
+                    margin-bottom: 35px;
+                    width: 236px;
+                }
+            }
+
+            .entry-title {
+                font-size: 24px;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+
+            .entry-meta {
+                font-size: 16px;
+                font-size: 1rem;
+                margin-top: 7px;
+
+                @include media(tablet) {
+                    font-size: 18px;
+                    font-size: 1.125rem;
+                }
+            }
+        }
+
+        .more-link {
+            border: 1px solid transparent;
+        }
+    }
+}
+
+.boxed-layout .team-section .hentry .hentry-inner {
+
+    @include media(tablet) {
+        padding: 15px;
+    }
+
+    @include media(wide) {
+        padding: 42px 15px;
+    }
+
+    @include media(large) {
+        padding: 42px;
+    }
+
+    .post-thumbnail {
+        height: 236px;
+        width: 236px;
+
+        @include media(mobile_horizontal) {
+            height: 150px;
+            margin-bottom: 28px;
+            width: 150px;
+        }
+
+        @include media(wide) {
+            height: 200px;
+            margin-bottom: 35px;
+            width: 200px;
+        }
+    }
+}
+
+.team-section .hentry .more-link:hover {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.team-section.section.text-aligned-left {
+    #menu-social-menu {
+        justify-content: flex-start;
+    }
+}
+
+.team-section.section.text-aligned-right {
+    #menu-social-menu {
+        justify-content: flex-end;
+    }
+}

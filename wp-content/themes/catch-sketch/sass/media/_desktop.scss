@@ -1,0 +1,85 @@
+@include media(desktop) {
+    .widget-area.footer-widget-area.four .widget-column,
+    .services-section .section-content-wrapper.layout-four .hentry,
+    .archive-content-wrap .section-content-wrapper.layout-four .hentry,
+    .team-section .team-content-wrapper.layout-four .hentry,
+    .featured-content-section .section-content-wrapper.layout-four .hentry,
+    .stats-section .section-content-wrapper.layout-four .hentry,
+    #portfolio-content-section .section-content-wrapper.layout-four .hentry,
+    .archive-content-wrap .section-content-wrapper.layout-four .hentry,
+    .section-content-wrapper.layout-four .hentry  {
+        width: 25%;
+    }
+
+    .products.columns-4 .product {
+        width: 23.2%;
+    }
+
+    .products.columns-3 .product {
+        width: 31.73%;
+    }
+
+    .products.columns-3 .product:nth-child(2n+2),
+    .products.columns-4 .product:nth-child(2n+2) {
+        margin-right: 2.40%;
+    }
+
+    .products.columns-3 .product:nth-child(3n+3) {
+        margin-right: 0;
+    }
+
+    .products.columns-4 .product:nth-child(3n+3) {
+        margin-right: 2.40%;
+    }
+
+    .sidebar.widget-area section.widget {
+        margin-right: 0;
+    }
+
+    .archive-content-wrap .section-content-wrapper.layout-three .hentry:nth-child(3n+1),
+    .portfolio-section .section-content-wrapper.layout-three .hentry:nth-child(3n+1),
+    .widget-area.footer-widget-area.three .widget-column:nth-child(3n+1),
+    .footer-widget-area.two .widget-column:nth-child(3n+1),
+    .products.columns-3 .product:nth-child(3n+1),
+    .layout-three .product:nth-child(3n+1),
+    .services-section .section-content-wrapper.layout-three .hentry:nth-child(3n+1),
+    .team-section .section-content-wrapper.layout-three .hentry:nth-child(3n+1),
+    .featured-content-section .section-content-wrapper.layout-three .hentry:nth-child(3n+1),
+    .stats-section .section-content-wrapper.layout-three .hentry:nth-child(3n+1),
+    #portfolio-content-section .section-content-wrapper.layout-three .hentry:nth-child(3n+1),
+    .archive-content-wrap .section-content-wrapper.layout-four .hentry:nth-child(4n+1),
+    .portfolio-section .section-content-wrapper.layout-four .hentry:nth-child(4n+1),
+    .widget-area.footer-widget-area.four .widget-column:nth-child(4n+1),
+    .footer-widget-area.two .widget-column:nth-child(4n+1),
+    .products.columns-4 .product:nth-child(4n+1),
+    .services-section .section-content-wrapper.layout-four .hentry:nth-child(4n+1),
+    .team-section .section-content-wrapper.layout-four .hentry:nth-child(4n+1),
+    .featured-content-section .section-content-wrapper.layout-four .hentry:nth-child(4n+1),
+    .stats-section .section-content-wrapper.layout-four .hentry:nth-child(4n+1),
+    #portfolio-content-section .section-content-wrapper.layout-four .hentry:nth-child(4n+1) {
+        clear: both;
+    }
+
+    .products.columns-4 .product:nth-child(4n+4),
+    .products.columns-4 .product:nth-child(4n+4) {
+        margin-right: 0;
+    }
+
+    .rtl .products.columns-3 .product:nth-child(3n+3) {
+        margin-right: 0;
+    }
+
+    .rtl .products.columns-4 .product:nth-child(3n+3) {
+        margin-right: 0;
+    }
+    
+    .rtl .products.columns-4 .product:nth-child(2n+2),
+    .rtl .products.columns-3 .product:nth-child(2n+2) {
+        margin-left: 2.40%;
+        margin-right: 0;
+    }
+
+    .rtl .products.columns-4 .product:nth-child(4n+4) {
+        margin-left:0;
+    }
+}

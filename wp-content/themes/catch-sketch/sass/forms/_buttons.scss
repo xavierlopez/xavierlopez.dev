@@ -1,0 +1,115 @@
+.more-link,
+input[type="submit"],
+button[type="submit"],
+.catch-instagram-feed-gallery-widget-wrapper .instagram-button .button,
+.wp-block-button__link,
+#infinite-handle .ctis-load-more button,
+.checkout-button,
+.button,
+button,
+select,
+.wp-block-button__link,
+nav.navigation.posts-navigation .nav-links a,
+.stats-section .view-all-button .more-button .more-link,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+.select2-container--default .select2-selection--single,
+.view-all-button .more-link,
+.wc-backward {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.2;
+	padding: 15px 28px;
+	text-transform: uppercase;
+	
+	&:hover,
+	&:focus {
+		box-shadow:inset 1px 3px 15px 0 rgba(0, 0, 0, 0.2);
+		-moz-box-shadow:inset 1px 3px 15px 0 rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow:inset 1px 3px 15px 0 rgba(0, 0, 0, 0.2);
+		outline: 0;
+	}
+
+	@include media(desktop) {
+		font-size: 15px;
+		font-size: 0.9375rem;
+		padding: 14px 35px;
+	}
+
+	@include media(wide) {
+		padding: 21px 42px;
+	}
+}
+
+.more-button,
+button {
+	margin-top: 21px;
+
+	@include media(wide) {
+		margin-top: 35px;
+	}
+}
+
+#infinite-handle {
+	text-align: center;
+	width: 100%;
+
+	.ctis-load-more button {
+		margin-top: 0;
+		margin-bottom: 42px;
+	}
+}
+
+#infinite-handle .ctis-load-more button:hover,
+#infinite-handle .ctis-load-more button:focus {
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 42px;
+	padding: 15px 28px;
+
+	@include media(desktop) {
+		font-size: 15px;
+		font-size: 0.9375rem;
+		padding: 14px 35px;
+	}
+
+	@include media(wide) {
+		padding: 21px 42px;
+	}
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+}
+
+.form-submit input[type="submit"] {
+	border: 0;
+}
+
+.select2-container .select2-selection--single {
+	height: 48px;
+
+	@include media(wide) {
+		height: 60px;
+	}
+}

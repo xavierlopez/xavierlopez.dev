@@ -1,0 +1,612 @@
+/*
+Theme Name: Catch Sketch Pro
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+* 1.0 Normalize
+* 2.0 Layouts
+* 3.0 Media Queries
+*  3.1 - >= 480px
+*  3.2 - >= 667px
+*  3.3 - >= 1024px
+*  3.4 - >= 1366px
+*/
+
+/*--------------------------------------------------------------
+ * 1.0 - Normalize
+--------------------------------------------------------------*/
+
+body.rtl {
+	direction: rtl;
+	overflow-x: hidden;
+	unicode-bidi: embed;
+}
+
+
+/*--------------------------------------------------------------
+ * 2.0 - Layouts
+--------------------------------------------------------------*/
+
+.navigation-classic .main-navigation ul ul a  {
+    text-align: left;
+}
+
+.navigation-default .menu-inside-wrapper {
+    left: -30px;
+    right: auto;
+}
+
+.navigation-default .menu-inside-wrapper, 
+.navigation-classic .search-social-container .menu-wrapper .menu-inside-wrapper {
+    left: -30px;
+    right: auto;
+}
+
+.navigation-classic .site-header-main .site-header-menu > .menu-wrapper > .menu-inside-wrapper {
+    left: -30px;
+    right: auto;
+}
+
+.navigation-classic .site-header-menu #primary-menu-wrapper .nav-menu .menu-item-has-children > a:after {
+    margin-right: 7px;
+    margin-left: 0;
+}
+
+.navigation-classic .site-header-menu #primary-menu-wrapper .nav-menu > li .sub-menu .menu-item-has-children > a:after {
+    content: "\f105";
+}
+
+.navigation-default .site-header-menu .menu-wrapper.is-open .menu-inside-wrapper, 
+.navigation-classic .site-header-main .site-header-menu > .menu-wrapper.is-open > .menu-inside-wrapper,
+.navigation-classic .site-header-menu .search-social-container .menu-wrapper.is-open .menu-inside-wrapper {
+    left: 0;
+    right: auto;
+}
+
+.navigation-default .menu-inside-wrapper .nav-menu li {
+    text-align: left;
+}
+
+.testimonials-content-wrapper.testimonial-wrapper.section .testimonial-slider-wrap.cycle-slide {
+    left: auto;
+    right: 0;
+}
+
+.testimonials-content-wrapper.testimonial-wrapper.section .testimonial-slider-wrap.cycle-slide .post-thumbnail img {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.testimonials-content-wrapper.section.testimonial-wrapper.has-background-image .section-content-wrap .entry-container,
+.testimonials-content-wrapper .testimonial-slider-wrap .post-thumbnail .entry-header {
+    text-align: right;
+}
+
+.testimonials-content-wrapper.has-background-image .controls {
+    bottom: 0;
+    justify-content: flex-start;
+    width: 100px;
+}
+
+.testimonials-content-wrapper.has-background-image .controls:before {
+    left: 57%;
+}
+
+#site-header-cart-wrapper {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.site-header-main .search-social-container > div {
+    margin-left: 30px;
+    margin-right: 0;    
+}
+
+.site-header-main .search-social-container > div:last-child {
+    margin-left: 0;
+}
+
+.sub-menu,
+.main-navigation li {
+    text-align: left;
+}
+
+.site-header-main .social-navigation {
+    margin-right: 0;
+}
+
+nav.social-navigation ul li, 
+.social-links-menu li,
+.contact-section.section .section-content-wrap .hentry .entry-container .stay-connected .social-links-menu li {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+nav.social-navigation ul li:last-child, 
+.social-links-menu li:last-child,
+.contact-section.section .section-content-wrap .hentry .entry-container .stay-connected .social-links-menu li:last-child {
+    margin-left: 0;
+}
+
+#social-menu-wrapper li:first-child {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+#social-menu-wrapper li:last-child {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.site-header-main .site-header-menu .search-social-container {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+#social-menu-wrapper {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.cat-links::before,
+.tags-links::before,
+.edit-link::before,
+.posted-on a::before,
+.byline a::before {
+    margin-right: 7px;
+}
+
+.entry-meta {
+    direction: ltr;
+}
+
+.navigation-default #primary-menu-wrapper {
+    padding-left: 0;
+}
+
+.cat-links a {
+	margin-left: 5px;
+
+	&:last-child {
+		margin-left: 0;
+	}
+}
+
+.widget_categories ul, 
+.widget_archive ul, 
+.ew-archive ul, 
+.ew-category ul {
+    text-align: left;
+}
+
+.ew-advertisement-slider .ewp-ads-controls {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.search-social-container nav.social-navigation ul li {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+nav.social-navigation ul li:last-child,
+.social-links-menu li:last-child {
+    margin-left: 0;
+}
+
+.search-form input[type="search"] {
+    text-align: left;
+}
+
+.widget_shopping_cart {
+    left: -100%;
+    right: auto;
+}  
+
+.widget_shopping_cart ul.woocommerce-mini-cart li {
+    text-align: left;
+}
+
+.woocommerce-posts-wrapper .entry-summary {
+    text-align: left;
+}
+
+.woocommerce-posts-wrapper .entry-summary .woocommerce-product-rating {
+    justify-content: flex-end;
+}
+
+table.shop_table.woocommerce-checkout-review-order-table tfoot th {
+    text-align: right;
+}
+
+table.shop_table.woocommerce-checkout-review-order-table tr,
+table.shop_table.woocommerce-checkout-review-order-table th,
+table.shop_table.woocommerce-checkout-review-order-table td {
+    text-align: right;
+}
+
+#menu-toggle {
+    direction: ltr;
+}
+
+ul,
+ol {
+    margin: 0 21px 0 0;
+}
+
+#scrollup {
+    left: 30px;
+    right: unset;
+}
+
+.archive-content-wrap .entry-container {
+    text-align: center;
+}
+
+.entry-title + .entry-meta > span {
+    margin-right: 0;
+    margin-left: 21px;
+}
+
+.testimonials-content-wrapper.section.testimonial-wrapper .cycle-pager {
+    direction: ltr;
+    left: 30px;
+    right: auto;
+}
+
+.testimonials-content-wrapper.section.testimonial-wrapper .cycle-pager .cycle-pager-active {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.testimonials-content-wrapper.section.testimonial-wrapper.has-background-image .controls {
+    left: auto;
+    right: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+.select2-container--default .select2-selection--single,
+.navigation.posts-navigation .nav-previous {
+    text-align: left;
+}
+
+.stats-section.section .section-content-wrapper .hentry .post-thumbnail {
+    float: none;
+}
+
+.stats-section.section .section-content-wrapper .hentry .entry-container {
+    text-align: center;
+}
+
+.section-heading-wrapper {
+    text-align: right;
+}
+
+.section:not(.testimonial-wrapper):not(.site-content) .section-heading-wrapper,
+.footer-instagram .section-title-wrapper {
+    text-align: center;
+}
+
+.contact-section.section .section-content-wrap .hentry .hentry-inner .entry-container .contact-details .fa{
+    float: right;
+    margin-left: 21px;
+    margin-right: 0;
+}
+
+.contact-section.section .section-content-wrap .hentry  .entry-container .contact-details .contact-wrap {
+    float: left;
+}
+
+.woocommerce-grouped-product-list tbody tr td:first-child {
+    border-right: 0;
+}
+
+.navigation.posts-navigation .nav-next {
+    text-align: right;
+}
+
+.single-product .singular-content-wrapper {
+    padding: inherit;
+}
+
+.widget-wrap .cat-item a, 
+.widget-wrap .ew-archives li a,
+.widget_archive li a {
+    float: right;
+}
+
+.slider-content-wrapper.section .controllers {
+    flex-direction: row-reverse;
+}
+
+.slider-content-wrapper.section.content-aligned-right .controllers {
+    left: 50%;
+}
+
+.slider-content-wrapper.section.content-aligned-left .controllers {
+    left: auto;
+}
+
+.slider-content-wrapper.section.content-aligned-right .controllers {
+    left: auto;
+}
+
+.services-section.section .hentry .hentry-inner .entry-container {
+    text-align: center;
+}
+
+.services-section.section .hentry .hentry-inner .post-thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-content-section .entry-container {
+    text-align: center;
+}
+
+.site-main nav.post-navigation .nav-links > div a span {
+    direction: ltr;
+}
+
+.woocommerce-posts-wrapper .entry-summary .woocommerce-product-rating .star-rating {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.woocommerce-tabs ul.tabs.wc-tabs li a {
+    direction: ltr;
+}
+
+.site-header-cart li span.count {
+    direction: ltr;
+}
+
+.comment_container img {
+    float: none;
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.comment_container .star-rating {
+    float: left;
+}
+
+.woocommerce-info {
+    direction: ltr;
+}
+
+div#customer_details label {
+text-align: left;
+}
+
+.custom-logo-link {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+.cart_totals.calculated_shipping th {
+    text-align: right;
+}
+
+.cart-collaterals .shop_table.shop_table_responsive th,
+.cart-collaterals .shop_table.shop_table_responsive td {
+    text-align: right;
+}
+
+input[type="number"] {
+    text-align: right;
+}
+
+
+/*--------------------------------------------------------------
+ * 3.0 - Media Queries
+--------------------------------------------------------------*/
+
+/* 
+
+ * 3.1 ->= 480px
+
+*/
+
+@media all and (min-width:480px) {
+    
+    #footer-newsletter .ewnewsletter .hentry form {
+       flex-direction: row-reverse;
+    }
+}
+
+/* 
+
+ * 3.2 ->= 667px
+ 
+*/
+
+@media all and (min-width:667px) {
+
+    .archive-content-wrap .entry-container {
+        text-align: right;
+    }
+
+    .testimonials-content-wrapper.section.testimonial-wrapper .cycle-pager {
+        left: 40px;
+        right: auto;
+    }
+
+    .stats-section.section .section-content-wrapper .hentry .post-thumbnail {
+        float: right;
+        margin-left: 28px;
+        margin-right: 0;
+    }
+
+    .stats-section.section .section-content-wrapper .hentry .entry-container {
+        text-align: right;
+    }
+
+    .section:not(.testimonial-wrapper):not(.site-content) .section-heading-wrapper,
+    .footer-instagram .section-title-wrapper {
+        text-align: right;
+    }
+
+    .slider-content-wrapper.section.content-aligned-left .controllers {
+        left: 50%;
+    }
+
+    .slider-content-wrapper.section.content-aligned-right .controllers {
+        left: calc(50% - 140px);
+    }
+
+    .services-section.section .hentry .hentry-inner .entry-container {
+        text-align: right;
+    }
+
+    .services-section.section .hentry .hentry-inner .post-thumbnai {
+        margin-left: auto;
+        margin-right: inherit;
+    }
+
+    .featured-content-section .entry-container {
+        text-align: right;
+    }
+
+    .comment_container img {
+        float: right;
+    }
+
+    tbody td:last-child,
+    table thead th:last-child {
+        border-right: 2px solid;
+        border-left: 0;
+    }
+}
+
+/* 
+
+ * 3.3 ->= 1024px
+ 
+*/
+
+@media all and (min-width: 1024px) {
+
+    .site-header-cart:hover .widget_shopping_cart {
+        -webkit-animation: rtlsmoothScrollBackShop .5s forwards,fadein .5s;
+        -moz-animation: rtlsmoothScrollBackShop .5s forwards,fadein .5s;
+        -o-animation: rtlsmoothScrollBackShop .5s forwards,fadein .5s;
+        animation: rtlsmoothScrollBackShop .5s forwards,fadein .5s;
+        right: auto;
+        left: 0;
+    }
+
+    .site-header-cart:hover .widget_shopping_cart {
+        left: 0;
+        right: auto;
+    }
+
+    .navigation-classic .site-header-main .site-header-menu > .menu-wrapper > .menu-inside-wrapper {
+        left: 0;
+    }
+
+    .navigation-classic .site-header-main .menu-item-has-children .sub-menu  li:hover > .sub-menu {
+        right: auto;
+        left: -100%;
+    }
+
+    .navigation-classic .site-header-main .menu-item-has-children .sub-menu  li.focus > .sub-menu {
+        right: auto;
+        left: -100%;
+    }
+
+    .navigation-classic .menu-inside-wrapper .nav-menu li:hover > .sub-menu {
+        
+        -webkit-animation: rtlsmoothScrollBack .5s forwards,fadein .5s;
+        -moz-animation: rtlsmoothScrollBack .5s forwards,fadein .5s;
+        -o-animation: rtlsmoothScrollBack .5s forwards,fadein .5s;
+        animation: rtlsmoothScrollBack .5s forwards,fadein .5s;
+        right: auto;
+        left: 0;
+    }
+
+    .navigation-classic .menu-inside-wrapper .nav-menu li.focus > .sub-menu {
+        
+        -webkit-animation: rtlsmoothScrollBack .5s forwards,fadein .5s;
+        -moz-animation: rtlsmoothScrollBack .5s forwards,fadein .5s;
+        -o-animation: rtlsmoothScrollBack .5s forwards,fadein .5s;
+        animation: rtlsmoothScrollBack .5s forwards,fadein .5s;
+        right: auto;
+        left: 0;
+    }
+        
+    @keyframes rtlsmoothScrollBack {
+        0% {
+        transform: translateX(20%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes rtlsmoothScrollBackShop {
+        0% {
+            transform: translateX(-5%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .navigation-classic .menu-inside-wrapper .nav-menu li > .sub-menu {
+        right: -999em;
+        left: auto;
+    }  
+}
+
+/* 
+
+ * 3.4 ->= 1366px
+ 
+*/
+
+@media all and (min-width:1366px) {
+
+    #social-menu-wrapper li:first-child {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    #social-menu-wrapper li:last-child {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .testimonials-content-wrapper.section.testimonial-wrapper .cycle-pager {
+        left: 50px;
+    }
+}

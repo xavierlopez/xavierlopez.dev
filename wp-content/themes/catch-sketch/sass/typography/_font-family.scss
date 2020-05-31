@@ -1,0 +1,43 @@
+body,
+.testimonials-content-wrapper .testimonial-slider-wrap .post-thumbnail .entry-header  .entry-title,
+blockquote:not(.alignleft):not(.alignright):before,
+.testimonial-slider-wrap .post-thumbnail .entry-header,
+.testimonials-content-wrapper .testimonial-slider-wrap button,
+.testimonial-slider-wrap .post-thumbnail .entry-header,
+code, 
+kbd, 
+tt, 
+var,
+.catch-breadcrumb .entry-breadcrumbs, 
+.author-title,
+.woocommerce-breadcrumb,
+.entry-title .sub-title,
+.entry-title .sub-title,
+.entry-title span,
+.section-title-wrapper + .section-description,
+.section-title + .section-description,
+.section-title-wrapper + .section-subtitle,
+.testimonial-slider-wrap .more-link {
+	font-family: $body-font; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-description,
+.archive-content-wrap .entry-title a,
+.testimonials-content-wrapper .entry-content,
+.testimonials-content-wrapper .cycle-prev:before,
+.testimonials-content-wrapper .cycle-next:before,
+.site-main nav.posts-navigation .nav-links > div .nav-title,
+.site-main nav.post-navigation .nav-links > div a .nav-title,
+.testimonials-content-wrapper .cycle-pager {
+    font-family: $heading-font;
+}
+
+.site-title {
+    font-family: $brand-title-font;
+}

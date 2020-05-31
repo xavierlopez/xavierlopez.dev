@@ -1,0 +1,158 @@
+@include media(mobile_horizontal) {
+
+    .section-content-wrapper.layout-two .hentry,
+    .footer-widget-area.four .widget-column,
+    .footer-widget-area.two .widget-column,
+    .portfolio-section .section-content-wrapper.layout-two .hentry,
+    .portfolio-section .section-content-wrapper.layout-four .hentry,
+    .portfolio-section .section-content-wrapper.layout-two .hentry,
+    .archive-content-wrap .section-content-wrapper.layout-two .hentry,
+    .team-section .team-content-wrapper.layout-four .hentry,
+    .team-section .team-content-wrapper.layout-two .hentry,
+    .sidebar.widget-area section.widget,
+    .stats-section .section-content-wrapper.layout-four .hentry,
+    .stats-section .section-content-wrapper.layout-two .hentry,
+    .featured-content-section .section-content-wrapper.layout-four .hentry,
+    .featured-content-section .section-content-wrapper.layout-two .hentry,
+    .services-section .section-content-wrapper.layout-four .hentry,
+    .services-section .section-content-wrapper.layout-two .hentry,
+    #portfolio-content-section .section-content-wrapper.layout-four .hentry,
+    #portfolio-content-section .section-content-wrapper.layout-two .hentry {
+        width: 50%;
+    }
+
+    .widget-area.footer-widget-area.three .widget-column,
+    .section-content-wrapper.layout-three .hentry,
+    .archive-content-wrap .section-content-wrapper.layout-three .hentry,
+    .products.columns-3 .product,
+    .team-section .team-content-wrapper.layout-three .hentry,
+    .services-section .section-content-wrapper.layout-three .hentry,
+    .featured-content-section .section-content-wrapper.layout-three .hentry,
+    .stats-section .section-content-wrapper.layout-three .hentry,
+    #portfolio-content-section .section-content-wrapper.layout-three .hentry,
+    .archive-content-wrap .section-content-wrapper.layout-three .hentry {
+        width: 33.33%;
+    }
+
+    div#customer_details > div,
+    .sidebar.widget-area section.widget,
+    .woocommerce-columns--addresses > div,
+    .products.columns-4 .product,
+    .products.columns-2 .product,
+    .products.columns-3 .product {
+        width: 48.8%;
+    }
+
+    .sidebar.widget-area section.widget,
+    .products .product,
+    .related .product,
+    div#customer_details > div,
+    .woocommerce-columns--addresses > div {
+        margin-right: 2.3113%;
+    }
+
+    .rtl .products.columns-4 .product,
+    .rtl .products.columns-3 .product,
+    .rtl .products.columns-2 .product {
+        margin-left: 2.3113%;
+        margin-right: 0;
+    }
+
+    .rtl div#customer_details > div,
+    .rtl .woocommerce-columns--addresses > div  {
+        margin-right: 0;
+        margin-left: 2.3113%;
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+
+    .rtl .archive-content-wrap .section-content-wrapper.layout-one .hentry,
+    .rtl .archive .archive-content-wrap .section-content-wrapper .hentry,
+    .rtl .services-section .section-content-wrapper.layout-one .hentry,
+    .rtl .team-section .section-content-wrapper.layout-one .hentry,
+    .rtl .featured-content-section .section-content-wrapper.layout-one .hentry,
+    .rtl .stats-section .section-content-wrapper.layout-one  .hentry,
+    .archive-content-wrap .section-content-wrapper.layout-one .hentry,
+    .services-section .section-content-wrapper.layout-one .hentry,
+    .team-section .section-content-wrapper.layout-one .hentry,
+    .featured-content-section .section-content-wrapper.layout-one .hentry,
+    .stats-section .section-content-wrapper.layout-one .hentry {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .sidebar.widget-area section.widget:nth-child(2n+2),
+    .products.columns-4 .product:nth-child(2n+2),
+    .products.columns-3 .product:nth-child(2n+2),
+    .products.columns-2 .product:nth-child(2n+2),
+    div#customer_details > div:nth-child(2n+2),
+    .woocommerce-columns--addresses > div:nth-child(2n+2)  {
+        margin-right: 0;
+    }
+
+    .rtl .products.columns-4 .product:nth-child(2n+2),
+    .rtl .products.columns-3 .product:nth-child(2n+2),
+    .rtl .products.columns-2 .product:nth-child(2n+2),
+    .rtl .sidebar.widget-area section.widget:nth-child(2n+2) {
+        margin-left: 0;
+    }
+
+    .portfolio-section .section-content-wrapper.layout-three .hentry:nth-child(2n+1),
+    .portfolio-section .section-content-wrapper.layout-four .hentry:nth-child(2n+2),
+    .portfolio-section .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .team-section .team-content-wrapper.layout-three .hentry:nth-child(2n+1),
+    .team-section .team-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .team-section .team-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .archive-content-wrap .section-content-wrapper.layout-three .hentry:nth-child(2n+1),
+    .archive-content-wrap .section-content-wrapper.layout-four .hentry:nth-child(2n+2),
+    .archive-content-wrap .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .widget-area.footer-widget-area.three .widget-column:nth-child(2n+1),
+    .widget-area.footer-widget-area.four .widget-column:nth-child(2n+1),
+    .footer-widget-area.two .widget-column:nth-child(2n+1),
+    .sidebar.widget-area section.widget:nth-child(2n+1),
+    .products.columns-4 .product:nth-child(2n+2),
+    .products.columns-3 .product:nth-child(2n+1),
+    .products.columns-2 .product:nth-child(2n+1),
+    .archive-content-wrap .section-content-wrapper.layout-three .hentry:nth-child(2n+1),
+    .rtl .portfolio-section .section-content-wrapper.layout-three .hentry:nth-child(2n+1),
+    .rtl .portfolio-section .section-content-wrapper.layout-four .hentry:nth-child(2n+2),
+    .rtl .archive-content-wrap .section-content-wrapper.layout-four .hentry:nth-child(2n+2),
+    .rtl .archive-content-wrap .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .rtl .portfolio-section .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .rtl .widget-area.footer-widget-area.three .widget-column:nth-child(2n+1),
+    .rtl .widget-area.footer-widget-area.four .widget-column:nth-child(2n+1),
+    .rtl .footer-widget-area.two .widget-column:nth-child(2n+1),
+    .rtl .sidebar.widget-area section.widget:nth-child(2n+1),
+    .rtl .products.columns-4 .product:nth-child(2n+2),
+    .rtl .products.columns-3 .product:nth-child(2n+1),
+    .rtl .products.columns-2 .product:nth-child(2n+1),
+    .rtl .services-section .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .rtl .services-section .section-content-wrapper.layout-three .hentry:nth-child(2n+1),
+    .rtl .services-section .section-content-wrapper.layout-four .hentry:nth-child(2n+1),
+    .rtl .team-section .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .rtl .team-section .section-content-wrapper.layout-three .hentry:nth-child(2n+1),
+    .rtl .team-section .section-content-wrapper.layout-four .hentry:nth-child(2n+1),
+    .rtl .featured-content-section .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .rtl .featured-content-section .section-content-wrapper.layout-three .hentry:nth-child(2n+1),
+    .rtl .featured-content-section .section-content-wrapper.layout-four .hentry:nth-child(2n+1),
+    .rtl .stats-section .section-content-wrapper.layout-four .hentry:nth-child(2n+1),
+    .rtl .stats-section .section-content-wrapper.layout-three .hentry:nth-child(2n+1),
+    .rtl .stats-section .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .services-section .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .featured-content-section .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .stats-section .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    .stats-section .section-content-wrapper.layout-four .hentry:nth-child(2n+2),
+    #portfolio-content-section .section-content-wrapper.layout-two .hentry:nth-child(2n+1),
+    div#customer_details > div:nth-child(2n+1),
+    .woocommerce-columns--addresses > div:nth-child(2n+1) {
+        clear: both;
+    }
+
+    .widget-area.footer-widget-area.three .widget-column:nth-child(3n+3),
+    .widget-area.footer-widget-area.four .widget-column:nth-child(3n+3) {
+        clear: none;
+    }
+}

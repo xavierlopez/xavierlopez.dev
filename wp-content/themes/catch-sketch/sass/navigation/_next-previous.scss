@@ -1,0 +1,24 @@
+.content-area .site-main nav.post-navigation {
+
+    .nav-previous {
+    
+        .nav-subtitle {
+    
+            &:before {
+                content: "<";
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .nav-next {
+
+        .nav-subtitle {
+            
+            &:after {
+                content: ">";
+                margin-left: 5px;
+            }
+        }
+    }
+}

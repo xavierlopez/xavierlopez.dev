@@ -1,0 +1,99 @@
+.portfolio-content-wrapper {
+
+    .hentry {
+        width: 100%;
+
+        .hentry-inner {
+            overflow: hidden;
+            position: relative;
+
+            &:hover .post-thumbnail img {
+         
+                @include media(mobile_horizontal) {
+                    transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                }
+            }
+
+            .post-thumbnail {
+                margin-bottom: 0;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+
+            @include media(desktop) {
+                &:hover .entry-container {
+                    opacity: 1;
+                    transform: translateY(0);
+                    -o-transform: translateY(0);
+                    -moz-transform: translateY(0);
+                    -webkit-transform: translateY(0);
+                }
+            }
+        }
+
+        .entry-container {
+            bottom: 0;
+            font-size: 14px;
+            font-size: 0.875rem;
+            transform: translateY(0);
+            -o-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            padding: 25px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            z-index: 9;
+
+            &:before {
+                background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 100%);
+                content: "";
+                opacity: 1;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+                z-index: -2;
+            }
+    
+            h2 {
+                font-size: 24px;
+                font-size: 1.5rem;
+            }
+
+            @include media(desktop) {
+                opacity: 1;
+                transform: translateY(110%);
+                -o-transform: translateY(110%);
+                -moz-transform: translateY(110%);
+                -webkit-transform: translateY(110%);
+            }
+
+            .more-button {
+                margin-top: 5px;
+            }
+
+            .entry-meta {
+                margin-bottom: 15px;
+
+                > span {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}   
+
+.portfolio-content-wrapper.layout-one .hentry {
+    width: 100%;
+    margin-right: 0;
+}
