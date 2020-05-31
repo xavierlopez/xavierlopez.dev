@@ -1,0 +1,122 @@
+.stats-section.section {
+    padding: 41px 0 7px;
+
+    @include media(desktop) {
+        padding-top: 82px;
+        padding-bottom: 44px;
+	}
+
+	@include media(large) {
+        padding-top: 112px;
+        padding-bottom: 70px;
+	}
+
+    .section-heading-wrapper {
+        padding-top: 0;
+    }
+    
+    .section-content-wrapper {
+    
+        .hentry {
+
+            .post-thumbnail {
+                float: none;
+                margin: 0 auto;
+                max-width: 85px;
+
+                @include media(mobile_horizontal) {
+                    float: left;
+                    margin-bottom: 0;
+                    margin-right: 28px;
+                }
+
+                @include media(desktop) {
+                    margin-top: 15px;
+                }
+
+                img {
+                    margin: 0 auto;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                }
+            }
+
+            .entry-container {
+                text-align: center;
+                
+                @include media(mobile_horizontal) {
+                    clear: none;
+                    overflow: hidden;
+                    text-align: left;
+                }
+
+                .entry-summary {
+                    margin-top: 0;
+                    text-transform: capitalize;
+                }
+
+                .entry-title {
+                    font-weight: 500;
+                    line-height: 1.31;
+                }
+            }
+        }
+    }
+}
+
+.stats-section .more-link {
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+        -o-box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
+
+.stats-section.section .section-content-wrapper {
+    margin: 0 auto;
+    max-width: 320px;
+
+    @include media(mobile_horizontal) {
+        max-width: 100%;
+    }
+
+    .hentry-inner {
+        align-items: center;
+        flex-wrap: nowrap;
+
+        @include media(desktop) {
+            justify-content: flex-start;
+        }
+    }
+}
+
+.stats-section.section .section-content-wrapper.layout-two .hentry-inner,
+.stats-section.section .section-content-wrapper.layout-one .hentry-inner {
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-section .view-all-button {
+
+    .more-button {
+        margin-bottom: 0;
+
+        .more-link {
+            border: 2px solid transparent;
+
+            &:hover,
+            &:focus {
+                box-shadow: none;
+                background: transparent;
+            }
+        }
+    }
+}    

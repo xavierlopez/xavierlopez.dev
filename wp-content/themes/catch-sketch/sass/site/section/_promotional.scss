@@ -1,0 +1,130 @@
+.promotion-headline-wrapper.section:not(.full-width-layout):not(.no-background) {
+
+    .wrapper {
+        max-width: 2560px;
+    }
+    .section-content-wrap {
+    
+        padding-right: 0;
+    }
+}
+
+.promotion-headline-wrapper.section.full-width-layout {
+    
+    .section-content-wrap {
+        max-width: 100%;
+    }
+    .wrapper {
+        max-width: 100%;
+
+        .post-thumbnail {
+            margin-right: 0;
+        }
+   
+        .entry-container {
+    
+            @include media(diagonal) {
+                margin: 0 auto;
+            }
+    
+            .inner-container {
+                @include media(diagonal) {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+
+    .section-content-wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .post-thumbnail img {
+        width: 100%;
+    }
+}
+
+.promotion-headline-wrapper .entry-container {
+    max-width: 1500px;
+}
+
+.promotion-headline-wrapper .section-content-wrap {
+    padding-right: 0;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.promotion-headline-wrapper .post-thumbnail {
+    @include media(large) {
+        margin-right: -100%;
+    }
+}
+
+.promotion-headline-wrapper .inner-container {
+    line-height: 1.75;
+    margin-left: auto;
+    margin-top: -42px;
+    margin-right: auto;
+    max-width: calc(100% - 58px);
+    padding: 42px 35px 35px; 
+    position: relative;
+    
+    @include media(mobile_horizontal) {
+        line-height: inherit;
+        margin-bottom: 0;
+        margin-right: 40px;
+        padding: 35px 40px;
+    }
+
+    @include media(tablet) {
+        margin-top: -162px;
+        max-width: 680px;
+    }
+
+    @include media(desktop) {
+        margin-top: -232px;
+        padding: 70px;
+    }
+
+    @include media(wide) {
+        margin-right: 50px;
+    }
+
+    @include media(large) {
+        margin-right: 50px;
+    }
+}
+
+/***
+    No Background image
+****/
+.promotion-headline-wrapper.no-background {
+    margin-bottom: 0;
+
+    .section-content-wrap {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        @include media(mobile_horizontal) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        @include media(wide) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .hentry {
+            margin: 0 auto;
+            max-width: 1500px;
+        }
+    }
+
+    .inner-container {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,177 @@
+.slider-content-wrapper.section {
+    
+    .post-slide.cycle-slide {
+        width: 100%;
+    }
+
+    .wrapper {
+        max-width: 2560px;
+    }
+
+    .hentry {
+        @include flex;
+        justify-content: unset;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 0;
+        max-width: 1500px;
+
+        > div {
+
+            @include media(mobile_horizontal) {
+                width: 50%;
+            }
+        }
+    }
+
+    .controllers {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 999;
+        @include flex;
+
+        @include media(mobile_horizontal){
+            bottom: 0;
+            left: 50%;
+            right: auto;
+            top: auto;
+        }
+
+        &:before {
+            content: "";
+            height: 10px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            width: 2px;
+            z-index: 2;
+        }
+    }
+
+    #featured-slider-next {
+        cursor: pointer;
+        outline: none;
+        padding: 16px 25px;
+        text-align: center;
+
+        @include media(tablet) {
+            padding: 20px 32px;
+        }
+    }
+
+    #featured-slider-prev {
+        @extend #featured-slider-next;
+    }
+}
+
+
+.slider-content-wrapper #featured-slider-pager {
+    display: none;
+}
+
+.slider-content-wrapper .slider-image {
+
+    background-size: cover;
+    background-position: center center;
+    bottom: 0;
+    padding-bottom: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    @include media(mobile_horizontal) {
+        padding-bottom: 0;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.slider-content-wrapper.content-aligned-right.text-aligned-right .entry-container {
+    
+	padding-right: 30px;
+
+	@include media(mobile_horizontal) {
+		padding-right: 40px;
+	}
+
+	@include media(wide) {
+		padding-right: 50px;
+	}
+}
+
+.slider-content-wrapper {
+
+    .entry-container {
+        margin-top: 21px;
+        padding: 0 30px;
+        padding-bottom: 0;
+        text-align: center;
+        width: 100%;
+
+
+        @include media(mobile_horizontal) {
+            height: 520px;
+            margin-top: 0;
+            padding: 100px 40px;
+            @include flex;
+            align-items: center;
+        }
+
+        @include media(tablet) {
+            text-align: left;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            
+        }
+
+        @include media(desktop) {
+            height: 720px;
+            padding-right: 10%;
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+
+        @include media(wide) {
+            padding-right: 16%;
+            padding-left: 50px;
+        }
+
+        @include media(large) {
+            height: 950px;
+            padding-top: 268px;
+            padding-bottom: 268px;
+        }
+    }
+}
+
+.slider-content-wrapper {
+    position: relative;
+
+    .section-content-wrap {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.cycle-slideshow {
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slider-content-wrapper.content-aligned-left.text-aligned-right .entry-container {
+    text-align: center;
+
+    @include media(tablet) {
+        text-align: right;
+    }
+}   

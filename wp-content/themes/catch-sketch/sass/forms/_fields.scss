@@ -1,0 +1,140 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+.select2-container--default .select2-selection--single {
+	box-sizing: border-box;
+    border: 2px solid;
+    -webkit-backface-visibility: hidden;
+    @include border(0);
+    font-weight: 400;
+    outline: none;
+    outline-offset: 0;
+    padding-left: 21px;
+    text-transform: none;
+    -webkit-appearance: none;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 20px;
+}
+
+div#customer_details,
+.woocommerce-columns--addresses {
+    @include flex;
+    align-items: unset;
+    justify-content: space-between;
+
+    > div {
+        margin-bottom: 30px;
+        padding: 0;
+        width: 100%;
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+button[type="submit"],
+input[type="submit"],
+input[type="search"] {
+    @include border(0);
+}
+
+button[type="submit"],
+input[type="submit"] {
+    border: 0;
+    width: auto;
+}
+
+textarea {
+	box-sizing: border-box;
+	display: block;
+	height: auto;
+	max-width: 100%;
+	resize: vertical;
+	width: 100%;
+}
+
+.search-form {
+    @include flex;
+    justify-content: flex-start;
+    position: relative;
+   
+    input[type="search"] {
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        cursor: text;
+        padding: 21px 0 19px 23px;
+        padding-right: 70px;
+    }
+
+    button {
+        border: 0;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        height: 100%;
+        margin: 0;
+        padding: 19px 20px;
+        top: 0;
+
+        @include border(0);
+        position: absolute;
+        right: 0;
+    }
+}
+
+select {
+    border: 2px solid;
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        outline: none; 
+    }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}

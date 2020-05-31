@@ -1,0 +1,276 @@
+.testimonials-content-wrapper.section.testimonial-wrapper.has-background-image {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .section-content-wrap {
+        max-width: 100%;
+
+        .entry-container {
+            text-align: left;
+        }
+    }
+
+    &:after {
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .section-heading-wrapper {
+        position: relative;
+        z-index: 2;
+    }
+
+    .post-thumbnail {
+        align-items: center;
+        
+        img {
+            margin-bottom: 0;
+            margin-right:18px;
+        }
+    }
+
+    .controls {
+        bottom: 0;
+        display: inline-block;
+        left: 15px;
+        position: relative;
+        right: auto;
+        transform: translateX(0);
+        -o-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        z-index: 999;
+    
+        @include media (tablet) {
+            bottom: 40%;
+            left: auto;
+            position: absolute;
+            right: 40px;
+            @include flex;
+         }
+
+        @include media(wide) {
+            right: 50px;
+        }
+    }
+}
+
+.testimonials-content-wrapper.section.testimonial-wrapper {
+    padding: 42px 0;
+    position: relative;
+
+    @include media(desktop) {
+        padding: 112px 0;
+    }
+
+    .section-heading-wrapper {
+        padding-top: 0;
+    }
+
+    .wrapper {
+        position: relative;
+    }
+
+    .hentry {
+        font-size: 24px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.46;
+        margin: 35px 0;
+        max-width: 662px;
+
+        @include media(desktop) {
+            font-size: 28px;
+            font-size: 1.75rem;
+            line-height: 1.5;
+            margin: 71px 0 61px;
+        }
+
+        @include media(wide) {
+            margin: 110px 0 70px;
+        }
+
+        @include media(large) {
+            margin: 167px 0 117px;
+        }
+
+        .entry-meta {
+            margin: 0;
+        }
+    }
+
+    .cycle-prev {
+
+        &:before {
+            content: "Prev";
+            cursor: pointer;
+        }
+
+        &:after {
+            content: "/";
+            font-size: 18px;
+            margin: 0 6px;
+        }
+    } 
+
+    .cycle-pager {
+        counter-reset: slides-num;
+        right: 30px;
+        position: absolute;
+        top:0;
+        z-index: 99;
+
+        @include media (tablet) {
+            right: 40px;
+         }
+
+         @include media(wide) {
+             right: 50px;
+         }
+
+        &:after {
+            content: counter(slides-num);
+            display: inline-block;
+            font-size: 24px;
+            line-height: 1;
+            padding-right: 10px;
+            vertical-align: top;
+
+            @include media(mobile_horizontal) {
+                line-height: 1.56;
+            }
+        }
+
+        &:before {
+            content: "";
+            height: 45px;
+            position: absolute;
+            left: 50%;
+            top: -6px;
+            transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            width: 1px;
+
+            @include media(mobile_horizontal) {
+                height: 48px;
+                top: 10px;
+            }
+        }
+
+        span {
+            counter-increment: slides-num;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 0;
+            line-height: 1;
+            vertical-align: bottom;
+
+            @include media(mobile_horizontal) {
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+.testimonials-content-wrapper .cycle-pager .cycle-pager-active {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.testimonials-content-wrapper .cycle-pager .cycle-pager-active:before {
+    content: counter(slides-num);
+    display: inline-block;
+    font-size: 36px;
+    font-size: 2.25rem;
+    vertical-align: middle;
+
+    @include media(mobile_horizontal) {
+        font-size: 48px;
+        font-size: 3rem;
+    }
+}
+
+.testimonials-content-wrapper .cycle-next:before {
+    content:"Next";
+    cursor: pointer;
+}
+
+.testimonials-content-wrapper .testimonial-slider-wrap {
+
+    .post-thumbnail {
+        margin-top: 28px;
+
+        @include media(mobile_horizontal) {
+            margin-top: 35px;
+        }
+
+        .entry-header {
+            font-weight: 400;
+            line-height: 1.17;
+            margin-bottom: 0;
+
+            .entry-title {      
+                font-size: 18px;
+                font-size: 1.125rem;
+                font-weight: 400;
+            }
+        }
+        
+        img {
+            height: 71px;
+            object-fit: cover;
+            margin-right: 15px;
+            width: 71px;
+            @include border(50%);
+        }
+    }
+}
+
+.testimonials-content-wrapper.section {
+
+    .section-content-wrap {
+        max-width: 600px;
+        margin: 0 auto;
+
+        .testimonial-slider-wrap.cycle-slide {
+            text-align: center;
+        }
+
+        .post-thumbnail {
+            display: block;
+
+            img {
+                margin: 0 auto;
+                margin-bottom: 15px;
+            }
+        }
+
+        .controls {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            position: relative;
+            @include flex;
+            z-index: 9999;
+             
+            @include media(desktop) {
+                bottom: 40px;
+            }
+        }
+    }
+}
+
+.testimonials-content-wrapper.section.has-background-image .section-content-wrap .testimonial-slider-wrap.cycle-slide {
+    text-align: left;
+}

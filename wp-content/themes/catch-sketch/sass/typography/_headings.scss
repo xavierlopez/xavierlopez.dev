@@ -1,0 +1,111 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &:first-child{
+        margin-top: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0.765625em 0 0.46875em 0;
+}
+
+h1,
+.custom-header-content .entry-title,
+.slider-content-wrapper .entry-container h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 1.31;
+
+    @include media(tablet) {
+        font-size: 43px;
+        font-size: 2.6875rem;
+    }
+
+    @include media(desktop) {
+        font-size: 58px;
+        font-size: 3.125rem;
+    }
+
+    @include media (wide) {
+        font-size: 64px;
+        font-size: 4rem;
+    }
+}
+
+h2,
+.woocommerce-posts-wrapper .product_title,
+.page-title,
+.stats-section .entry-title {
+    font-size: 36px;
+    font-size: 2.25rem;
+    margin-bottom: 0.72916666666em;
+    margin-top: 1.0208333em;
+
+    @include media(desktop) {
+        font-size: 42px;
+        font-size: 2.625rem;
+    }
+
+    @include media (wide) {
+        font-size: 48px;
+        font-size: 3rem;
+    }
+}
+
+h3,
+.woocommerce-tabs .woocommerce-Tabs-panel h2 {
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 1.36;
+    margin-bottom: 0.9722222em;
+    margin-top: 1.36111111111em;
+
+    @include media(wide) {
+        font-size: 36px;
+        font-size: 2.25rem;
+    }
+}
+
+h4,
+.content-area .archive-content-wrap .entry-container .section-title {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.46;
+    margin-bottom: 1.4583333333 em;
+    margin-top: 2.0416666em;
+}
+
+h5 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 1.9444444444em;
+    margin-top: 2.7222222em;
+}
+
+h6 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.17;
+    margin-bottom: 2.1875em;
+    margin-top: 3.062em;
+}
