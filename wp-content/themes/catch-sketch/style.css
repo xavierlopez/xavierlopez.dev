@@ -5569,7 +5569,6 @@ footer #site-generator .wrapper .site-social {
     display: block;
     font-weight: 500;
     margin-bottom: 7px;
-    text-transform: uppercase;
 }
 
 .comment-respond .comment-form .form-submit {
@@ -9253,4 +9252,8 @@ input:hover::-webkit-input-placeholder {
         flex-direction: row;
         width:100%;
     }
+}
+
+.argpd-informar {
+    display: none!important;
 }
