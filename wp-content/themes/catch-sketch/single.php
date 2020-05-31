@@ -33,19 +33,20 @@ get_header(); ?>
 	</div>
 
 
-	
+
 <script>
-	/* We add some code for the simple comment */
+	
 document.addEventListener("DOMContentLoaded", function(){
 
 	function adios() {
-		cuadro.innerHTML = "";
+		document.querySelector('#fijo').style.visibility ="visible";
+		cuadro.innerHTML = "Enviado. ¡Gracias!";
 	}
 
 	function gracias () {
 	
-		cuadro.innerHTML = "Enviado. ¡Gracias!";
-		setTimeout(adios,2000);
+		document.querySelector('#fijo').style.visibility ="hidden";
+		setTimeout(adios,500);
 	}
 	const b = document.querySelector(".wpcf7-submit");
 	
