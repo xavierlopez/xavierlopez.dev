@@ -8,7 +8,6 @@
  */
 
 get_header(); ?>
-
 	<div id="primary" class="content-area">
 			<main id="main" class="site-main">
 				<div class="singular-content-wrap">
@@ -32,6 +31,30 @@ get_header(); ?>
 	<div id="fijo">
 		<?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
 	</div>
+
+
+	
+<script>
+	/* We add some code for the simple comment */
+document.addEventListener("DOMContentLoaded", function(){
+
+	function adios() {
+		cuadro.innerHTML = "";
+	}
+
+	function gracias () {
+	
+		cuadro.innerHTML = "Enviado. ¡Gracias!";
+		setTimeout(adios,2000);
+	}
+	const b = document.querySelector(".wpcf7-submit");
+	
+	b.addEventListener("click", gracias);
+
+	const cuadro =document.querySelector('#fijo');
+	
+});
+</script>
 
 <?php
 get_sidebar();
