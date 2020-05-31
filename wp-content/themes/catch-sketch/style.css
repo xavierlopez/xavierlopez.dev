@@ -129,7 +129,7 @@ hr {
  * Remove the gray background on active links in IE 10.
  */
 a {
-    background-color: #00fc7c38;
+    background-color:transparent;
     
 }
 
@@ -9257,4 +9257,8 @@ input:hover::-webkit-input-placeholder {
 
 .argpd-informar {
     display: none!important;
+}
+
+p a {
+    background-color: aqua;
 }
